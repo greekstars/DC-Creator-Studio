@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+</head>
+<body>
+  <h1></h1>
+  <form action="/generate" method="post">
+    <label>Bot Token:<br />
+      <input type="text" name="token" required style="width: 400px;" />
+    </label>
+    <br /><br />
+
+    <strong>Select Bundles:</strong><br />
+    <label><input type="checkbox" name="bundles" value="moderation" /> Moderation Command Bundle</label><br />
+    <label><input type="checkbox" name="bundles" value="basic" /> Basic Utility Command Bundle</label><br />
+    <label><input type="checkbox" name="bundles" value="advanced1" /> Advanced Bundle 1</label><br />
+    <label><input type="checkbox" name="bundles" value="developer" /> Developer Bundle</label><br />
+    <label><input type="checkbox" name="bundles" value="advanced2" /> Advanced Bundle 2</label><br /><br />
+
+    <button type="submit">Generate Bot Files</button>
+  </form>
+</body>
+</html>
